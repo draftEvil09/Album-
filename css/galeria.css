@@ -1,0 +1,79 @@
+body{
+	background-color:#FBF8F1;
+}
+h1{
+	color: white;
+	text-shadow: 1px 2px 2px black, 0 0 25px #03C4A1, 0 0 5px #03C4A1;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	text-shadow: 1px 2px 2px black, 0 0 25px #03C4A1, 0 0 5px #03C4A1;
+	text-align: center;
+}
+
+div.galeria{
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px 0 #F806CC, 0 6px 20px 0 #F806CC;
+	float:left;
+	width: 350px;
+	cursor: pointer;
+	position: relative;
+	overflow:hidden;
+}
+
+div.galeria img{
+	width: 100%;
+	height: auto;
+	transition: all 500ms ease-out;
+}
+
+div.galeria:hover {
+	border: 1px solid #F806CC;
+	transform: rotate(-3deg);
+}
+
+div.pie{
+	color: #00A8CC;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgb(178, 234, 37);
+	padding: 10px;
+}
+div.capa{
+	position:absolute;
+	top: 0;
+	width:100%;
+	height: 100%;
+	background: rgba(11,103,123,0.6);
+	opacity: 0;
+	transition: all 500ms ease-out;
+	visibility: hidden;
+	text-align: center;
+}
+
+div.galeria:hover > .capa{
+	opacity: 1;
+	visibility: visible;
+}
+
+div.galeria:hover > .capa h3{
+	margin-top: 70px;
+	margin-bottom: 15px; 
+}
+
+div.galeria .capa h3{
+	color:#fff;
+	font-weight: 400;
+	margin-bottom: 120px;
+	transition: all 500ms ease-out;
+	margin-top: 30px;
+}
+div.galeria .capa p{
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.5;
+	width:100%;
+	max-width: 220px;
+	margin: auto;
+}
